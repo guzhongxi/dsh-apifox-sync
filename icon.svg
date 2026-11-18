@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32" role="img" aria-label="Apifox endpoint sync">
+  <defs>
+    <linearGradient id="apifoxSyncBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3d8ea1"/>
+      <stop offset="1" stop-color="#2b6675"/>
+    </linearGradient>
+  </defs>
+  <rect x="1" y="1" width="30" height="30" rx="8" fill="url(#apifoxSyncBg)"/>
+  <g fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M8 12h10a4 4 0 0 1 4 4v2"/>
+    <path d="m19.5 15 2.5 3 2.5-3"/>
+    <path d="M24 22H14a4 4 0 0 1-4-4v-2"/>
+    <path d="m12.5 19-2.5-3-2.5 3"/>
+  </g>
+</svg>

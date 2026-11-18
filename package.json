@@ -1,0 +1,74 @@
+{
+  "name": "dsh-apifox-sync",
+  "displayName": "Apifox 接口同步",
+  "description": "检测 Solon/Spring Controller 与请求、响应模型的改动，并在确认后覆盖同步到 Apifox。",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "apifox",
+    "openapi",
+    "solon",
+    "spring"
+  ],
+  "author": "Your Name <you@example.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-account/dsh-apifox-sync.git"
+  },
+  "homepage": "https://github.com/your-account/dsh-apifox-sync#readme",
+  "bugs": {
+    "url": "https://github.com/your-account/dsh-apifox-sync/issues"
+  },
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "lib",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "docs",
+    "icon.svg",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "check": "node --check index.js && node --check client.js && node --check lib/java-model.js && node --check lib/scanner.js && node --check lib/apifox.js && node --check lib/routes.js && node --test test/*.test.js"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-conversation",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-client-ui-sidebar",
+        "@deepseek-ai/dsh-client-ui-session",
+        "@deepseek-ai/dsh-client-locale"
+      ]
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": ">=4.1.0 <5.0.0",
+    "@deepseek-ai/dsh-tools": ">=0.2.2-rc.3 <0.3.0-0"
+  },
+  "dependencies": {
+    "java-parser": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "license": "MIT"
+}

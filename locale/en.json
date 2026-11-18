@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Apifox endpoint sync",
+    "description": "Detect changed controllers, request and response models, review affected endpoints, and explicitly upload selected API documentation to Apifox. Supports Solon and common Spring mapping annotations.",
+    "detail": "docs/DETAIL.md"
+  }
+}

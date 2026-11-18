@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# IDE / editor (machine-specific: contains absolute paths and project ids)
+.idea/
+.vscode/
+*.iml
+
+# Build output
+out/
+dist/
+*.tsbuildinfo
+
+# Local plugin / Apifox configuration (may contain tokens or private project ids)
+.spring-api-helper.json
+.apifox-sync.json
+
+# Secrets
+.env
+.env.*
+*.pem
+*.key
+
+# Logs and OS files
+*.log
+pnpm-debug.log*
+.DS_Store
+Thumbs.db

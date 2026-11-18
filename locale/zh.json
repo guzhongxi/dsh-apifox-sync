@@ -1,0 +1,7 @@
+{
+  "meta": {
+    "title": "Apifox 接口同步",
+    "description": "自动检测 Controller、请求参数、响应字段和接口说明的改动，展示受影响接口，并在你点击确认后覆盖同步到 Apifox。支持 Solon 与常用 Spring 映射注解。",
+    "detail": "docs/DETAIL.md"
+  }
+}
